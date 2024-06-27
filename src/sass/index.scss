@@ -645,3 +645,425 @@ footer {
       }
     }
   }
+  @media only screen and (max-width: 480px) {
+    /* ------------ navbar ---------------------- */
+    .navContainer {
+      margin-top: 1em !important;
+  
+      & .homeImg {
+        display: none !important;
+      }
+  
+      & .option {
+        & ul {
+          align-items: center;
+          text-align: center;
+          gap: 1em !important;
+        }
+      }
+    }
+    /* ------------ main content ---------------------- */
+    main {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "photo"
+        "title"
+        "downArrow";
+  
+      & #photo {
+        margin-top: -5em;
+        height: auto;
+        img {
+          margin: 0;
+          padding: 0;
+          height: 80%;
+        }
+      }
+  
+      & #title {
+        padding: 0;
+        text-align: center;
+  
+        & p:nth-child(3) {
+          padding-top: 1em;
+          margin: auto;
+          text-align: center;
+        }
+      }
+  
+      .iconsAndButton {
+        display: block !important;
+  
+        & a div {
+          margin: 1.5em auto;
+          width: 80%;
+        }
+      }
+    }
+    /* ------------ my experience ---------------------- */
+  
+    .card {
+      & .logo_jobTitle {
+        padding-bottom: 1em;
+      }
+  
+      & .description {
+        height: auto;
+      }
+    }
+  
+    /* ------------ my projects ---------------------- */
+  
+    .projectCard {
+      display: block !important;
+  
+      & img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto !important;
+      }
+  
+      div:nth-child(2) {
+        & a {
+          margin: auto;
+          & img {
+            margin: 0 1em !important;
+          }
+        }
+      }
+    }
+  
+    /* ------------ skills ---------------------- */
+  
+    .skillCard {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    /* ------------ contact me ---------------------- */
+  
+    .contactMeContainer {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "contactMeText"
+        "contactMeForm ";
+  
+      .contactMeText {
+        padding: 0 2em;
+        display: flex;
+        justify-content: center;
+        & p {
+          position: static;
+          padding: 0;
+          text-align: start;
+          width: 80%;
+        }
+      }
+  
+      .contactMeForm {
+        width: 100%;
+        padding: 1em 0 0 0;
+        display: flex;
+        justify-content: center;
+  
+        & form {
+          width: 80vw;
+        }
+      }
+    }
+  
+    /* ------------ footer ---------------------- */
+  
+    footer {
+      div:first-child {
+        p {
+          padding: 0.2em;
+        }
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 767px) and (min-width: 481px) {
+    /* ------------ navbar ---------------------- */
+    .navContainer {
+      margin-top: 1em !important;
+      max-width: calc(100% - 2em);
+  
+      & .homeImg {
+        & a img {
+          min-width: 3em;
+        }
+      }
+  
+      & .option {
+        & ul {
+          align-items: center;
+          text-align: center;
+          gap: 1em !important;
+        }
+      }
+    }
+  
+    /* ------------ main content ---------------------- */
+    main {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "photo"
+        "title"
+        "downArrow";
+  
+      & #photo {
+        margin-top: -5em;
+        height: auto;
+        img {
+          margin: 0;
+          padding: 0;
+          height: 80%;
+        }
+      }
+  
+      & #title {
+        padding: 0;
+        text-align: center;
+  
+        & p:nth-child(3) {
+          padding-top: 1em;
+          margin: auto;
+          text-align: center;
+        }
+      }
+  
+      .iconsAndButton {
+        display: block !important;
+  
+        & a div {
+          margin: 1.5em auto;
+          width: 80%;
+        }
+      }
+    }
+  
+    /* ------------ my experience ---------------------- */
+  
+    .card {
+      & .logo_jobTitle {
+        padding-bottom: 1em;
+      }
+  
+      & .description {
+        height: auto;
+      }
+    }
+  
+    /* ------------ my projects ---------------------- */
+  
+    .projectCard {
+      display: block !important;
+  
+      & img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto !important;
+      }
+  
+      div:nth-child(2) {
+        /* border: 1px solid red;*/
+  
+        & a {
+          margin: auto;
+  
+          & img {
+            margin: 0 1em !important;
+          }
+        }
+      }
+    }
+  
+    /* ------------ skills ---------------------- */
+  
+    .skillCard {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    /* ------------ contact me ---------------------- */
+  
+    .contactMeContainer {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "contactMeText"
+        "contactMeForm ";
+  
+      .contactMeText {
+        padding: 0 2em;
+        display: flex;
+        justify-content: center;
+        & p {
+          position: static;
+          padding: 0;
+          text-align: center;
+          width: 50%;
+        }
+      }
+  
+      .contactMeForm {
+        width: 100%;
+        padding: 1em 0 0 0;
+        display: flex;
+        justify-content: center;
+  
+        & form {
+          width: 80vw;
+        }
+      }
+    }
+  
+    /* ------------ footer ---------------------- */
+  
+    footer {
+      div:first-child {
+        p {
+          padding: 0.2em;
+        }
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) and (min-width: 481px) {
+    /* ------------ navbar ---------------------- */
+    .navContainer {
+      margin-top: 1em !important;
+      max-width: calc(100% - 2em);
+  
+      & .homeImg {
+        & a img {
+          min-width: 3em;
+        }
+      }
+  
+      & .option {
+        & ul {
+          font-size: 1.2em;
+          align-items: center;
+          text-align: center;
+          gap: 1em !important;
+        }
+      }
+    }
+  
+    /* ------------ skills ---------------------- */
+  
+    .skillCard {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    /* ------------ contact me ---------------------- */
+  
+    .contactMeContainer {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "contactMeText"
+        "contactMeForm ";
+  
+      .contactMeText {
+        padding: 0 2em;
+        display: flex;
+        justify-content: center;
+        & p {
+          position: static;
+          padding: 0;
+          text-align: start;
+          width: 70%;
+        }
+      }
+  
+      .contactMeForm {
+        width: 100%;
+        padding: 1em 0 0 0;
+        display: flex;
+        justify-content: center;
+  
+        & form {
+          width: 75vw;
+        }
+      }
+    }
+  
+    /* ------------ footer ---------------------- */
+  
+    footer {
+      div:first-child {
+        p {
+          padding: 0.2em;
+        }
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 1280px) and (min-width: 1025px) {
+    /* ------------ main ---------------------- */
+  
+    main {
+      #title {
+        p:nth-child(2) {
+          font-size: 4em;
+        }
+      }
+    }
+  
+    /* ------------ skills ---------------------- */
+  
+    .skillCard {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    /* ------------ contact me ---------------------- */
+  
+    .contactMeContainer {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "contactMeText"
+        "contactMeForm ";
+  
+      .contactMeText {
+        padding: 0 2em;
+        display: flex;
+        justify-content: center;
+        & p {
+          position: static;
+          padding: 0;
+          text-align: start;
+          width: 70%;
+        }
+      }
+  
+      .contactMeForm {
+        width: 100%;
+        padding: 1em 0 0 0;
+        display: flex;
+        justify-content: center;
+  
+        & form {
+          width: 75vw;
+        }
+      }
+    }
+  
+    /* ------------ footer ---------------------- */
+  
+    footer {
+      div:first-child {
+        p {
+          padding: 0.2em;
+        }
+      }
+    }
+  }
