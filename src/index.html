@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="icon" href="/src/img/favicon.ico" />
     <title>Portfolio Mark Joaquin</title>
   </head>
   <body>
@@ -481,5 +482,26 @@
         </div>
       </div>
     </footer>
+    <script>
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+
+      /* test */
+      document.addEventListener("DOMContentLoaded", function () {
+        const nav = document.querySelector("nav");
+        const navContainer = document.getElementById("navContainer");
+
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 0) {
+            nav.classList.add("scrolled");
+            navContainer.classList.add("scrolled");
+          } else {
+            nav.classList.remove("scrolled");
+            navContainer.classList.remove("scrolled");
+          }
+        });
+      });
+      /* test */
+    </script>
   </body>
 </html>
