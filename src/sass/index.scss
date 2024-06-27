@@ -611,3 +611,37 @@ main {
     background-color: #9228e3;
   }
 }
+/* ------------------------------------------------------------------------ */
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1c2536;
+    height: auto;
+    padding: 3em;
+  
+    div:first-child {
+      color: $fontColor;
+      font-family: $secondFont;
+      font-size: 1em;
+      font-weight: 400;
+  
+      p {
+        padding: 0.5em;
+      }
+    }
+  
+    .iconsAndButton {
+      .icons {
+        a {
+          padding: 0.5em;
+          img {
+            width: 2.5em;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
