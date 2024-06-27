@@ -199,4 +199,31 @@ main .downArrow {
   display: flex;
   justify-content: center;
   padding-bottom: 2em;
+}
+
+/* ------------------------------------------------------------------------ */
+/* About me */
+.aboutMe {
+  padding-top: 6em;
+  padding-bottom: 3em;
+  /*   padding: 2.5em; */
+  background-color: #111927;
+}
+.aboutMe p:first-child {
+  display: flex;
+  justify-content: center;
+  color: #edf2f7;
+  font-family: "Inter", sans-serif;
+  font-size: 2em;
+  font-weight: 500;
+  padding: 1em;
+}
+.aboutMe p:nth-child(2) {
+  margin: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #a0aec0;
+  font-size: 1.1em;
+  font-weight: 500;
+  max-width: 70%;
+  text-align: justify;
 }/*# sourceMappingURL=index.css.map */

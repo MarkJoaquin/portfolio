@@ -222,3 +222,31 @@ main {
     justify-content: center;
     padding-bottom: 2em;
   }
+  /* ------------------------------------------------------------------------ */
+/* About me */
+
+.aboutMe {
+    padding-top: 6em;
+    padding-bottom: 3em;
+    /*   padding: 2.5em; */
+    background-color: $secondBkColor;
+    p:first-child {
+      display: flex;
+      justify-content: center;
+      color: $fontColor;
+      font-family: $mainFont;
+      font-size: 2em;
+      font-weight: 500;
+      padding: 1em;
+    }
+  
+    p:nth-child(2) {
+      margin: auto;
+      font-family: $secondFont;
+      color: $secondFontColor;
+      font-size: 1.1em;
+      font-weight: 500;
+      max-width: 70%;
+      text-align: justify;
+    }
+  }
