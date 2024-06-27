@@ -387,4 +387,73 @@ main .downArrow {
   -webkit-mask-image: none;
           mask-image: none;
   border-radius: 0;
+}
+
+/* ------------------------------------------------------------------------ */
+/* My Skills */
+.mySkills {
+  background-color: #0e1320;
+  padding-top: 7em;
+  margin-bottom: 1em;
+}
+.mySkills #titleSkills {
+  color: #edf2f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 2em;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 1.5em;
+}
+.mySkills .skillCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  background-color: #0e1320;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 4em;
+  padding: 0 1em;
+}
+.mySkills .skillCard .card {
+  background-color: #111927;
+  padding: 1em;
+  border-radius: 1em;
+  text-align: center;
+  width: 20em;
+  height: 22em;
+}
+.mySkills .skillCard .card h3 {
+  font-family: "Inter", sans-serif;
+  color: #edf2f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.5em;
+  padding: 1em 0;
+}
+.mySkills .skillCard .card .icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.mySkills .skillCard .card .icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.8em;
+}
+.mySkills .skillCard .card .icon img {
+  width: 3.5em;
+  height: auto;
+  margin-bottom: 1em;
+}
+.mySkills .skillCard .card .icon p {
+  margin: 0;
+  color: #edf2f7;
+  font-size: 1em;
+  font-weight: 500;
 }/*# sourceMappingURL=index.css.map */

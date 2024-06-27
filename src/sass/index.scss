@@ -426,3 +426,80 @@ main {
       }
     }
   }
+  /* ------------------------------------------------------------------------ */
+/* My Skills */
+
+.mySkills {
+    background-color: $bkColor;
+    padding-top: 7em;
+    margin-bottom: 1em;
+    & #titleSkills {
+      color: $fontColor;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 500;
+      font-size: 2em;
+      font-family: $mainFont;
+      margin-bottom: 1.5em;
+    }
+  
+    .skillCard {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2em;
+      background-color: $bkColor;
+      font-family: $secondFont;
+      margin-bottom: 4em;
+      padding: 0 1em;
+  
+      .card {
+        background-color: $secondBkColor;
+        padding: 1em;
+        border-radius: 1em;
+        text-align: center;
+        width: 20em;
+        height: 22em;
+  
+        & h3 {
+          font-family: $mainFont;
+          color: $fontColor;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: 500;
+          font-size: 1.5em;
+          padding: 1em 0;
+        }
+  
+        .icons {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+        }
+  
+        .icon {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0.8em;
+  
+          img {
+            width: 3.5em;
+            height: auto;
+            margin-bottom: 1em;
+          }
+  
+          p {
+            margin: 0;
+            color: $fontColor;
+            font-size: 1em;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+  
