@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: content-box;
+}
+
+body {
+  background-color: #0e1320;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+img,
+video,
+svg {
+  height: auto;
+  max-width: 100%;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 1em;
+}
+
+/* ------------------------------------------------------------------------ */
+/* NAV BAR */
+nav {
+  background-color: #0e1320;
+  color: #edf2f7;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding: 1em 0;
+  /* test */
+  /* test */
+}
+nav.scrolled {
+  background-color: transparent;
+}
+nav .navContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.5em;
+  gap: 2em;
+  /* test */
+  /* test */
+}
+nav .navContainer.scrolled {
+  background-color: rgba(14, 19, 32, 0.8);
+  border-radius: 3em;
+  padding: 1.5em;
+  box-shadow: 0.2em 0.2em 2.2em 0px rgba(1, 6, 20, 0.8);
+}
+nav .navContainer .homeImg {
+  display: flex;
+}
+nav .navContainer img {
+  display: flex;
+  width: 3em;
+  height: auto;
+  border-radius: 50%;
+}
+nav .navContainer .option {
+  display: flex;
+  align-items: center;
+}
+nav .navContainer .option ul {
+  display: flex;
+  list-style-type: none;
+  gap: 2em;
+  padding: 0;
+}
+nav .navContainer .option ul li a {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: #edf2f7;
+}/*# sourceMappingURL=index.css.map */

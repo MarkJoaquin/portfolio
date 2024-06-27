@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: content-box;
+}
+
+body {
+  background-color: #0e1320;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+img,
+video,
+svg {
+  height: auto;
+  max-width: 100%;
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 1em;
+}
+
+/* ------------------------------------------------------------------------ */
+/* NAV BAR */
+
+$fontColor: #edf2f7;
+$secondFontColor: #a0aec0;
+$bkColor: #0e1320;
+$secondBkColor: #111927;
+$mainFont: "Inter", sans-serif;
+$secondFont: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+nav {
+  background-color: $bkColor;
+  color: $fontColor;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding: 1em 0;
+
+  /* test */
+  &.scrolled {
+    background-color: transparent;
+  }
+  /* test */
+
+  .navContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5em;
+    gap: 2em;
+
+    /* test */
+    &.scrolled {
+      background-color: rgb(14, 19, 32, 0.8);
+      border-radius: 3em;
+      padding: 1.5em;
+      box-shadow: 0.2em 0.2em 2.2em 0px rgb(1 6 20 / 80%);
+    }
+    /* test */
+
+    .homeImg {
+      display: flex;
+    }
+
+    & img {
+      display: flex;
+      width: 3em;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    .option {
+      display: flex;
+      align-items: center;
+      & ul {
+        display: flex;
+        list-style-type: none;
+        gap: 2em;
+        padding: 0;
+
+        li a {
+          font-family: $mainFont;
+          font-weight: 500;
+          text-decoration: none;
+          color: $fontColor;
+        }
+      }
+    }
+  }
+}
