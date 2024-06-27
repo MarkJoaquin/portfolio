@@ -558,4 +558,31 @@ main .downArrow {
 }
 .contactMeForm button:hover {
   background-color: #9228e3;
+}
+
+/* ------------------------------------------------------------------------ */
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1c2536;
+  height: auto;
+  padding: 3em;
+}
+footer div:first-child {
+  color: #edf2f7;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+footer div:first-child p {
+  padding: 0.5em;
+}
+footer .iconsAndButton .icons a {
+  padding: 0.5em;
+}
+footer .iconsAndButton .icons a img {
+  width: 2.5em;
+  height: auto;
 }/*# sourceMappingURL=index.css.map */
