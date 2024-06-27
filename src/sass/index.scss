@@ -250,3 +250,70 @@ main {
       text-align: justify;
     }
   }
+
+  /* ------------------------------------------------------------------------ */
+/* My Experience */
+
+.myExperience {
+    background-color: $bkColor;
+  
+    & h3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $fontColor;
+      font-family: $mainFont;
+      font-weight: 500;
+      font-size: 2em;
+      padding: 3em 0 1em;
+    }
+  
+    .card {
+      padding-bottom: 4em;
+  
+      .logo_jobTitle {
+        width: calc(80% - 1em);
+        margin: auto;
+        display: flex;
+        align-items: center;
+  
+        & div img {
+          max-width: 10em;
+        }
+  
+        & div {
+          padding-right: 1em;
+        }
+      }
+    }
+  
+    & .jobDetails {
+      color: $fontColor;
+      font-family: $secondFont;
+  
+      & p:first-child {
+        font-weight: 700;
+      }
+    }
+  
+    .description {
+      height: auto;
+      width: calc(80% - 1em);
+      background-color: $secondBkColor;
+      border-radius: 10em;
+      margin: auto;
+      padding: 3em;
+  
+      & ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: square;
+        padding-left: 2em;
+        & li {
+          color: $fontColor;
+          font-family: $secondFont;
+          padding-bottom: 1em;
+        }
+      }
+    }
+  }
