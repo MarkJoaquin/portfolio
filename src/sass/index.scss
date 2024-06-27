@@ -121,385 +121,493 @@ nav {
 /* First Content */
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-      "title title title photo"
-      "title title title photo"
-      "downArrow downArrow downArrow downArrow";
-  
-    background-color: $bkColor;
-    padding-top: 10em;
-  
-    & img {
-      width: 2.5em;
-    }
-  
-    .downArrow {
-      display: flex;
-      justify-content: center;
-      width: 2em;
-      background-color: $bkColor;
-    }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "title title title photo"
+    "title title title photo"
+    "downArrow downArrow downArrow downArrow";
+
+  background-color: $bkColor;
+  padding-top: 10em;
+
+  & img {
+    width: 2.5em;
   }
-  
-  #title {
-    grid-area: title;
+
+  .downArrow {
+    display: flex;
+    justify-content: center;
+    width: 2em;
     background-color: $bkColor;
-    font-family: $secondFont;
-    color: $fontColor;
-    padding: 9em 0 9em 10em;
-    display: inline;
-  
-    p:first-child {
-      font-size: 2.5em;
-      font-weight: 500;
-    }
-    p:nth-child(2) {
-      font-size: 3.5em;
-      font-weight: 500;
-    }
-    p:nth-child(3) {
-      padding: 2em 0;
-      color: $secondFontColor;
-      max-width: 70%;
-      font-size: 1.2em;
-    }
-    .iconsAndButton {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 1em;
-  
-      .icons a {
-        margin: 0.5em;
-      }
-  
-      .resumeDownloadButton {
-        text-decoration: none;
-  
-        .downloadButton {
-          border: #1b45b1 0.2em solid;
-          padding: 0.5em 1.6em;
-          border-radius: 50em;
-          .button {
-            color: $fontColor;
-            border: none;
-            background-color: transparent;
-            font-size: 1.4em;
-            padding-right: 0.2em;
-          }
-          .downloadIcon {
-            height: 1.4em;
-            width: 1.4em;
-          }
-        }
-      }
-  
-      .downloadButton:hover * {
-        cursor: pointer;
-      }
-    }
   }
-  #photo {
-    grid-area: photo;
+}
+
+#title {
+  grid-area: title;
+  background-color: $bkColor;
+  font-family: $secondFont;
+  color: $fontColor;
+  padding: 9em 0 9em 10em;
+  display: inline;
+
+  p:first-child {
+    font-size: 2.5em;
+    font-weight: 500;
+  }
+  p:nth-child(2) {
+    font-size: 3.5em;
+    font-weight: 500;
+  }
+  p:nth-child(3) {
+    padding: 2em 0;
+    color: $secondFontColor;
+    max-width: 70%;
+    font-size: 1.2em;
+  }
+  .iconsAndButton {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $bkColor;
-    margin-right: 1em;
-    box-sizing: content-box;
-    img {
-      width: auto;
-      border-radius: 70%;
-      padding-right: 15%;
-      margin-right: 8em;
+    gap: 1em;
+
+    .icons a {
+      margin: 0.5em;
+    }
+
+    .resumeDownloadButton {
+      text-decoration: none;
+
+      .downloadButton {
+        border: #1b45b1 0.2em solid;
+        padding: 0.5em 1.6em;
+        border-radius: 50em;
+        .button {
+          color: $fontColor;
+          border: none;
+          background-color: transparent;
+          font-size: 1.4em;
+          padding-right: 0.2em;
+        }
+        .downloadIcon {
+          height: 1.4em;
+          width: 1.4em;
+        }
+      }
+    }
+
+    .downloadButton:hover * {
+      cursor: pointer;
     }
   }
-  #downArrow {
-    grid-area: downArrow;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 2em;
+}
+#photo {
+  grid-area: photo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $bkColor;
+  margin-right: 1em;
+  box-sizing: content-box;
+  img {
+    width: auto;
+    border-radius: 70%;
+    padding-right: 15%;
+    margin-right: 8em;
   }
-  /* ------------------------------------------------------------------------ */
+}
+#downArrow {
+  grid-area: downArrow;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2em;
+}
+/* ------------------------------------------------------------------------ */
 /* About me */
 
 .aboutMe {
-    padding-top: 6em;
-    padding-bottom: 3em;
-    /*   padding: 2.5em; */
-    background-color: $secondBkColor;
-    p:first-child {
-      display: flex;
-      justify-content: center;
-      color: $fontColor;
-      font-family: $mainFont;
-      font-size: 2em;
-      font-weight: 500;
-      padding: 1em;
-    }
-  
-    p:nth-child(2) {
-      margin: auto;
-      font-family: $secondFont;
-      color: $secondFontColor;
-      font-size: 1.1em;
-      font-weight: 500;
-      max-width: 70%;
-      text-align: justify;
-    }
+  padding-top: 6em;
+  padding-bottom: 3em;
+  /*   padding: 2.5em; */
+  background-color: $secondBkColor;
+  p:first-child {
+    display: flex;
+    justify-content: center;
+    color: $fontColor;
+    font-family: $mainFont;
+    font-size: 2em;
+    font-weight: 500;
+    padding: 1em;
   }
 
-  /* ------------------------------------------------------------------------ */
+  p:nth-child(2) {
+    margin: auto;
+    font-family: $secondFont;
+    color: $secondFontColor;
+    font-size: 1.1em;
+    font-weight: 500;
+    max-width: 70%;
+    text-align: justify;
+  }
+}
+
+/* ------------------------------------------------------------------------ */
 /* My Experience */
 
 .myExperience {
-    background-color: $bkColor;
-  
-    & h3 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: $fontColor;
-      font-family: $mainFont;
-      font-weight: 500;
-      font-size: 2em;
-      padding: 3em 0 1em;
-    }
-  
-    .card {
-      padding-bottom: 4em;
-  
-      .logo_jobTitle {
-        width: calc(80% - 1em);
-        margin: auto;
-        display: flex;
-        align-items: center;
-  
-        & div img {
-          max-width: 10em;
-        }
-  
-        & div {
-          padding-right: 1em;
-        }
-      }
-    }
-  
-    & .jobDetails {
-      color: $fontColor;
-      font-family: $secondFont;
-  
-      & p:first-child {
-        font-weight: 700;
-      }
-    }
-  
-    .description {
-      height: auto;
+  background-color: $bkColor;
+
+  & h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $fontColor;
+    font-family: $mainFont;
+    font-weight: 500;
+    font-size: 2em;
+    padding: 3em 0 1em;
+  }
+
+  .card {
+    padding-bottom: 4em;
+
+    .logo_jobTitle {
       width: calc(80% - 1em);
-      background-color: $secondBkColor;
-      border-radius: 10em;
       margin: auto;
-      padding: 3em;
-  
-      & ul {
-        display: flex;
-        flex-direction: column;
-        list-style-type: square;
-        padding-left: 2em;
-        & li {
-          color: $fontColor;
-          font-family: $secondFont;
-          padding-bottom: 1em;
-        }
+      display: flex;
+      align-items: center;
+
+      & div img {
+        max-width: 10em;
+      }
+
+      & div {
+        padding-right: 1em;
       }
     }
   }
-  /* ------------------------------------------------------------------------ */
+
+  & .jobDetails {
+    color: $fontColor;
+    font-family: $secondFont;
+
+    & p:first-child {
+      font-weight: 700;
+    }
+  }
+
+  .description {
+    height: auto;
+    width: calc(80% - 1em);
+    background-color: $secondBkColor;
+    border-radius: 10em;
+    margin: auto;
+    padding: 3em;
+
+    & ul {
+      display: flex;
+      flex-direction: column;
+      list-style-type: square;
+      padding-left: 2em;
+      & li {
+        color: $fontColor;
+        font-family: $secondFont;
+        padding-bottom: 1em;
+      }
+    }
+  }
+}
+/* ------------------------------------------------------------------------ */
 /* My Projects */
 
 .myProjects {
-    background-color: $bkColor;
-    padding-top: 7em;
+  background-color: $bkColor;
+  padding-top: 7em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & h2 {
+    font-family: $mainFont;
+    color: $fontColor;
+    font-weight: 500;
+    font-size: 2em;
+  }
+  & p {
+    color: $fontColor;
+    font-family: $secondFont;
+    font-size: 1em;
+    font-weight: 450;
+    padding-top: 1em;
+    text-align: center;
+  }
+  .cardContainer {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    & h2 {
-      font-family: $mainFont;
-      color: $fontColor;
-      font-weight: 500;
-      font-size: 2em;
+    flex-wrap: wrap;
+    background-color: $bkColor;
+    color: $fontColor;
+  }
+
+  .projectCard {
+    display: flex;
+    align-items: center;
+    width: 75vw;
+    max-width: 40em;
+    padding: 3em;
+    background-color: $secondBkColor;
+    border-radius: 2em;
+    margin: 2em;
+
+    & img {
+      max-width: 28em;
+      width: 18em;
+      height: auto;
+      object-fit: cover;
+      margin-left: -5em;
+      margin-right: 1em;
+      border-radius: 3em;
+      mask-image: linear-gradient(black 50%, transparent);
     }
-    & p {
-      color: $fontColor;
-      font-family: $secondFont;
-      font-size: 1em;
-      font-weight: 450;
-      padding-top: 1em;
-      text-align: center;
-    }
-    .cardContainer {
+
+    div:nth-child(2) {
+      width: calc(100% - 2em);
       display: flex;
       justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      background-color: $bkColor;
-      color: $fontColor;
-    }
-  
-    .projectCard {
-      display: flex;
-      align-items: center;
-      width: 75vw;
-      max-width: 40em;
-      padding: 3em;
-      background-color: $secondBkColor;
-      border-radius: 2em;
-      margin: 2em;
-  
-      & img {
-        max-width: 28em;
-        width: 18em;
-        height: auto;
-        object-fit: cover;
-        margin-left: -5em;
-        margin-right: 1em;
-        border-radius: 3em;
-        mask-image: linear-gradient(black 50%, transparent);
+      flex-direction: column;
+      padding: 2em;
+
+      h2,
+      p {
+        font-family: $secondFont;
+        font-weight: 400;
       }
-  
-      div:nth-child(2) {
-        width: calc(100% - 2em);
+
+      h3 {
         display: flex;
         justify-content: center;
-        flex-direction: column;
-        padding: 2em;
-  
-        h2,
-        p {
-          font-family: $secondFont;
-          font-weight: 400;
-        }
-  
-        h3 {
-          display: flex;
-          justify-content: center;
-          font-size: 2em;
-          font-family: $secondFont;
-          margin-top: 0;
-          margin-right: 1em;
-          margin-bottom: 0.5em;
-        }
-  
-        p {
-          font-size: 1em;
-          margin-top: 1em;
-          margin-bottom: 2em;
-          opacity: 0.5;
-        }
-  
-        a {
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          border: 0;
-          background: #1e2946;
-          color: $fontColor;
-          padding: 1em 2em;
-          font-family: $secondFont;
-          font-size: 1em;
-          font-weight: 400;
-          border-radius: 50em;
-          text-decoration: none;
-  
-          & img {
-            margin-left: 0.5em;
-            width: 1em;
-            height: auto;
-            mask-image: none;
-            border-radius: 0;
-          }
+        font-size: 2em;
+        font-family: $secondFont;
+        margin-top: 0;
+        margin-right: 1em;
+        margin-bottom: 0.5em;
+      }
+
+      p {
+        font-size: 1em;
+        margin-top: 1em;
+        margin-bottom: 2em;
+        opacity: 0.5;
+      }
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 0;
+        background: #1e2946;
+        color: $fontColor;
+        padding: 1em 2em;
+        font-family: $secondFont;
+        font-size: 1em;
+        font-weight: 400;
+        border-radius: 50em;
+        text-decoration: none;
+
+        & img {
+          margin-left: 0.5em;
+          width: 1em;
+          height: auto;
+          mask-image: none;
+          border-radius: 0;
         }
       }
     }
   }
-  /* ------------------------------------------------------------------------ */
+}
+/* ------------------------------------------------------------------------ */
 /* My Skills */
 
 .mySkills {
+  background-color: $bkColor;
+  padding-top: 7em;
+  margin-bottom: 1em;
+  & #titleSkills {
+    color: $fontColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 2em;
+    font-family: $mainFont;
+    margin-bottom: 1.5em;
+  }
+
+  .skillCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
     background-color: $bkColor;
-    padding-top: 7em;
-    margin-bottom: 1em;
-    & #titleSkills {
-      color: $fontColor;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-weight: 500;
-      font-size: 2em;
-      font-family: $mainFont;
-      margin-bottom: 1.5em;
-    }
-  
-    .skillCard {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 2em;
-      background-color: $bkColor;
-      font-family: $secondFont;
-      margin-bottom: 4em;
-      padding: 0 1em;
-  
-      .card {
-        background-color: $secondBkColor;
-        padding: 1em;
-        border-radius: 1em;
-        text-align: center;
-        width: 20em;
-        height: 22em;
-  
-        & h3 {
-          font-family: $mainFont;
+    font-family: $secondFont;
+    margin-bottom: 4em;
+    padding: 0 1em;
+
+    .card {
+      background-color: $secondBkColor;
+      padding: 1em;
+      border-radius: 1em;
+      text-align: center;
+      width: 20em;
+      height: 22em;
+
+      & h3 {
+        font-family: $mainFont;
+        color: $fontColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        font-size: 1.5em;
+        padding: 1em 0;
+      }
+
+      .icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      .icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0.8em;
+
+        img {
+          width: 3.5em;
+          height: auto;
+          margin-bottom: 1em;
+        }
+
+        p {
+          margin: 0;
           color: $fontColor;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          font-size: 1em;
           font-weight: 500;
-          font-size: 1.5em;
-          padding: 1em 0;
-        }
-  
-        .icons {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-around;
-        }
-  
-        .icon {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          margin: 0.8em;
-  
-          img {
-            width: 3.5em;
-            height: auto;
-            margin-bottom: 1em;
-          }
-  
-          p {
-            margin: 0;
-            color: $fontColor;
-            font-size: 1em;
-            font-weight: 500;
-          }
         }
       }
     }
   }
-  
+} /* ------------------------------------------------------------------------ */
+/* Contact Me */
+
+.contactMe {
+  padding: 7em 0;
+  h3 {
+    color: $fontColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 2em;
+    font-family: $mainFont;
+    margin-bottom: 1.5em;
+  }
+}
+
+.contactMeContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "contactMeText contactMeText contactMeForm contactMeForm"
+    "contactMeText contactMeText contactMeForm contactMeForm";
+  grid-template-rows: 100px;
+
+  .contactMeText {
+    grid-area: contactMeText;
+    /*     border: 1px red solid; */
+    padding: 5em;
+
+    p {
+      color: $fontColor;
+      font-family: $secondFont;
+      font-size: 1.1em;
+      font-weight: 500;
+      text-align: end;
+      width: 50%;
+      position: relative;
+      left: 50%;
+
+      a {
+        text-decoration: underline $secondFontColor;
+        strong {
+          color: $secondFontColor;
+        }
+      }
+      a:hover {
+        text-decoration: none;
+        strong:hover {
+          color: #325280;
+        }
+      }
+    }
+  }
+}
+
+.contactMeForm {
+  grid-area: contactMeForm;
+  /*   border: 1px red solid; */
+  padding: 1.5em;
+  width: 50em;
+  color: #fff;
+  margin-left: 2.5em;
+  font-family: $secondFont;
+  font-weight: 500;
+  margin: 0 !important;
+
+  & form {
+    width: 90%;
+    & .form-group {
+      margin-bottom: 1em;
+      & label {
+        display: block;
+        margin-bottom: 0.5em;
+      }
+    }
+  }
+
+  & input,
+  & textarea {
+    width: 100%;
+    padding: 0.8em;
+    border: 3px solid #334164;
+    border-radius: 1em;
+    background-color: #25345c57;
+    font-size: 0.8em;
+    color: $fontColor;
+  }
+
+  & input::placeholder,
+  & textarea::placeholder {
+    color: #b6b3b3;
+  }
+
+  & button {
+    width: 100%;
+    padding: 0.8em;
+    background-color: #a259ff;
+    color: $fontColor;
+    border: none;
+    border-radius: 1em;
+    font-size: 0.8em;
+    cursor: pointer;
+    margin-top: 1em;
+  }
+
+  & button:hover {
+    background-color: #9228e3;
+  }
+}
