@@ -199,4 +199,88 @@ main .downArrow {
   display: flex;
   justify-content: center;
   padding-bottom: 2em;
+}
+
+/* ------------------------------------------------------------------------ */
+/* About me */
+.aboutMe {
+  padding-top: 6em;
+  padding-bottom: 3em;
+  /*   padding: 2.5em; */
+  background-color: #111927;
+}
+.aboutMe p:first-child {
+  display: flex;
+  justify-content: center;
+  color: #edf2f7;
+  font-family: "Inter", sans-serif;
+  font-size: 2em;
+  font-weight: 500;
+  padding: 1em;
+}
+.aboutMe p:nth-child(2) {
+  margin: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #a0aec0;
+  font-size: 1.1em;
+  font-weight: 500;
+  max-width: 70%;
+  text-align: justify;
+}
+
+/* ------------------------------------------------------------------------ */
+/* My Experience */
+.myExperience {
+  background-color: #0e1320;
+}
+.myExperience h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #edf2f7;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 2em;
+  padding: 3em 0 1em;
+}
+.myExperience .card {
+  padding-bottom: 4em;
+}
+.myExperience .card .logo_jobTitle {
+  width: calc(80% - 1em);
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.myExperience .card .logo_jobTitle div img {
+  max-width: 10em;
+}
+.myExperience .card .logo_jobTitle div {
+  padding-right: 1em;
+}
+.myExperience .jobDetails {
+  color: #edf2f7;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.myExperience .jobDetails p:first-child {
+  font-weight: 700;
+}
+.myExperience .description {
+  height: auto;
+  width: calc(80% - 1em);
+  background-color: #111927;
+  border-radius: 10em;
+  margin: auto;
+  padding: 3em;
+}
+.myExperience .description ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: square;
+  padding-left: 2em;
+}
+.myExperience .description ul li {
+  color: #edf2f7;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 1em;
 }/*# sourceMappingURL=index.css.map */
