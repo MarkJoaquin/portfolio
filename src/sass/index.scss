@@ -116,3 +116,109 @@ nav {
     }
   }
 }
+
+/* ------------------------------------------------------------------------ */
+/* First Content */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "title title title photo"
+      "title title title photo"
+      "downArrow downArrow downArrow downArrow";
+  
+    background-color: $bkColor;
+    padding-top: 10em;
+  
+    & img {
+      width: 2.5em;
+    }
+  
+    .downArrow {
+      display: flex;
+      justify-content: center;
+      width: 2em;
+      background-color: $bkColor;
+    }
+  }
+  
+  #title {
+    grid-area: title;
+    background-color: $bkColor;
+    font-family: $secondFont;
+    color: $fontColor;
+    padding: 9em 0 9em 10em;
+    display: inline;
+  
+    p:first-child {
+      font-size: 2.5em;
+      font-weight: 500;
+    }
+    p:nth-child(2) {
+      font-size: 3.5em;
+      font-weight: 500;
+    }
+    p:nth-child(3) {
+      padding: 2em 0;
+      color: $secondFontColor;
+      max-width: 70%;
+      font-size: 1.2em;
+    }
+    .iconsAndButton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1em;
+  
+      .icons a {
+        margin: 0.5em;
+      }
+  
+      .resumeDownloadButton {
+        text-decoration: none;
+  
+        .downloadButton {
+          border: #1b45b1 0.2em solid;
+          padding: 0.5em 1.6em;
+          border-radius: 50em;
+          .button {
+            color: $fontColor;
+            border: none;
+            background-color: transparent;
+            font-size: 1.4em;
+            padding-right: 0.2em;
+          }
+          .downloadIcon {
+            height: 1.4em;
+            width: 1.4em;
+          }
+        }
+      }
+  
+      .downloadButton:hover * {
+        cursor: pointer;
+      }
+    }
+  }
+  #photo {
+    grid-area: photo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bkColor;
+    margin-right: 1em;
+    box-sizing: content-box;
+    img {
+      width: auto;
+      border-radius: 70%;
+      padding-right: 15%;
+      margin-right: 8em;
+    }
+  }
+  #downArrow {
+    grid-area: downArrow;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+  }

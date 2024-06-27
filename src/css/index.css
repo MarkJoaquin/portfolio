@@ -103,4 +103,100 @@ nav .navContainer .option ul li a {
   font-weight: 500;
   text-decoration: none;
   color: #edf2f7;
+}
+
+/* ------------------------------------------------------------------------ */
+/* First Content */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "title title title photo" "title title title photo" "downArrow downArrow downArrow downArrow";
+  background-color: #0e1320;
+  padding-top: 10em;
+}
+main img {
+  width: 2.5em;
+}
+main .downArrow {
+  display: flex;
+  justify-content: center;
+  width: 2em;
+  background-color: #0e1320;
+}
+
+#title {
+  grid-area: title;
+  background-color: #0e1320;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #edf2f7;
+  padding: 9em 0 9em 10em;
+  display: inline;
+}
+#title p:first-child {
+  font-size: 2.5em;
+  font-weight: 500;
+}
+#title p:nth-child(2) {
+  font-size: 3.5em;
+  font-weight: 500;
+}
+#title p:nth-child(3) {
+  padding: 2em 0;
+  color: #a0aec0;
+  max-width: 70%;
+  font-size: 1.2em;
+}
+#title .iconsAndButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+#title .iconsAndButton .icons a {
+  margin: 0.5em;
+}
+#title .iconsAndButton .resumeDownloadButton {
+  text-decoration: none;
+}
+#title .iconsAndButton .resumeDownloadButton .downloadButton {
+  border: #1b45b1 0.2em solid;
+  padding: 0.5em 1.6em;
+  border-radius: 50em;
+}
+#title .iconsAndButton .resumeDownloadButton .downloadButton .button {
+  color: #edf2f7;
+  border: none;
+  background-color: transparent;
+  font-size: 1.4em;
+  padding-right: 0.2em;
+}
+#title .iconsAndButton .resumeDownloadButton .downloadButton .downloadIcon {
+  height: 1.4em;
+  width: 1.4em;
+}
+#title .iconsAndButton .downloadButton:hover * {
+  cursor: pointer;
+}
+
+#photo {
+  grid-area: photo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0e1320;
+  margin-right: 1em;
+  box-sizing: content-box;
+}
+#photo img {
+  width: auto;
+  border-radius: 70%;
+  padding-right: 15%;
+  margin-right: 8em;
+}
+
+#downArrow {
+  grid-area: downArrow;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2em;
 }/*# sourceMappingURL=index.css.map */
