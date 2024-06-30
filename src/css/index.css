@@ -753,9 +753,6 @@ footer .iconsAndButton .icons a img {
     align-items: center;
     margin: auto !important;
   }
-  .projectCard div:nth-child(2) {
-    /* border: 1px solid red;*/
-  }
   .projectCard div:nth-child(2) a {
     margin: auto;
   }
