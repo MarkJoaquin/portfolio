@@ -344,7 +344,7 @@ main .downArrow {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 2em;
+  padding: 1.2em;
 }
 .myProjects .projectCard div:nth-child(2) h2,
 .myProjects .projectCard div:nth-child(2) p {
