@@ -716,6 +716,9 @@ footer {
   
     .projectCard {
       display: block !important;
+      width: 100% !important;
+      padding: 0 1.2em !important;
+      margin: 2em 0  !important;
   
       & img {
         display: flex;
