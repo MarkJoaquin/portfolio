@@ -424,6 +424,7 @@ main .downArrow {
   text-align: center;
   width: 20em;
   height: auto;
+  min-height: 22em;
 }
 .mySkills .skillCard .card h3 {
   font-family: "Inter", sans-serif;
