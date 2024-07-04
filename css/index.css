@@ -331,13 +331,11 @@ main .downArrow {
   max-width: 28em;
   width: 18em;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin-left: -5em;
   margin-right: 1em;
   border-radius: 3em;
-  -webkit-mask-image: linear-gradient(black 50%, transparent);
-          mask-image: linear-gradient(black 50%, transparent);
+  mask-image: linear-gradient(black 50%, transparent);
 }
 .myProjects .projectCard div:nth-child(2) {
   width: calc(100% - 2em);
@@ -384,8 +382,7 @@ main .downArrow {
   margin-left: 0.5em;
   width: 1em;
   height: auto;
-  -webkit-mask-image: none;
-          mask-image: none;
+  mask-image: none;
   border-radius: 0;
 }
 
@@ -497,8 +494,7 @@ main .downArrow {
   left: 50%;
 }
 .contactMeContainer .contactMeText p a {
-  -webkit-text-decoration: underline #a0aec0;
-          text-decoration: underline #a0aec0;
+  text-decoration: underline #a0aec0;
 }
 .contactMeContainer .contactMeText p a strong {
   color: #a0aec0;
@@ -539,9 +535,6 @@ main .downArrow {
   background-color: rgba(37, 52, 92, 0.3411764706);
   font-size: 0.8em;
   color: #edf2f7;
-}
-.contactMeForm input::-moz-placeholder, .contactMeForm textarea::-moz-placeholder {
-  color: #b6b3b3;
 }
 .contactMeForm input::placeholder, .contactMeForm textarea::placeholder {
   color: #b6b3b3;
@@ -887,4 +880,6 @@ footer .iconsAndButton .icons a img {
   footer div:first-child p {
     padding: 0.2em;
   }
-}/*# sourceMappingURL=index.css.map */
+}
+
+/*# sourceMappingURL=index.css.map */
